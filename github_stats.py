@@ -290,7 +290,7 @@ All-time contributions: {await self.total_contributions:,}
 Repositories with contributions: {len(await self.repos)}
 Lines of code added: {lines_changed[0]:,}
 Lines of code deleted: {lines_changed[1]:,}
-Lines of code changed: {lines_changed[0] + lines_changed[1]:,}
+All-time commits: {lines_changed[0] + lines_changed[1]:,}
 Project page views: {await self.views:,}
 Languages:
   - {formatted_languages}"""
