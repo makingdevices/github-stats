@@ -496,8 +496,11 @@ Languages:
                     continue
 
                 for week in author_obj.get("weeks", []):
-                    additions += week.get("a", 0)
-                    deletions += week.get("d", 0)
+                    #I do not want additions or deletions
+                    #additions += week.get("a", 0)
+                    #deletions += week.get("d", 0)
+                    additions += week.get("c", 0)
+                    deletions += 0
 
         self._lines_changed = (additions, deletions)
         return self._lines_changed
